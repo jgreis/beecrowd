@@ -1,11 +1,13 @@
 # beecrowd 1013 - O Maior
-# Wrong answer (100%) ???
 num = gets.split(' ')
+a = num[0].to_i
+b = num[1].to_i
+c = num[2].to_i
 
-if num[0].to_i > num[1].to_i && num[1].to_i > num[2].to_i
-  puts "#{num[0]} eh o maior"
-elsif num[1].to_i > num[0].to_i && num[0].to_i > num[2].to_i
-  puts "#{num[1]} eh o maior"
+if a > b && b > c
+  puts "#{a} eh o maior"
+elsif b > a && a > c
+  puts "#{b} eh o maior"
 else
-  puts "#{num[2]} eh o maior"
+  puts "#{c} eh o maior"
 end
